@@ -12,6 +12,14 @@
   .book-container {
     display: flex;
     width: 100%;
+    position: relative;
+
+    .book-heart {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 24px;
+    }
   }
 
   .book-cover {

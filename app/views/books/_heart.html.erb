@@ -1,0 +1,9 @@
+<% if current_user.favorited_book?(@book) %>
+  <%= link_to favorite_path(current_user.find_favorite(@book)), method: :delete, remote: true do %>
+    <i class="fas fa-heart"></i>
+  <% end %>
+<% else %>
+  <%= link_to book_favorites_path(@book), method: :post, remote: true do %>
+    <i class="far fa-heart"></i>
+  <% end %>
+<% end %>
