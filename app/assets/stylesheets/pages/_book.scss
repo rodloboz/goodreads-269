@@ -1,0 +1,37 @@
+.book-section {
+  margin: 50px 0;
+  padding: 30px;
+  background: white;
+  box-shadow:  0 1px 7px rgba(0,0,0,.05);
+  border-radius: 4px;
+
+  a {
+    color: $green;
+  }
+
+  .book-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .book-cover {
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 150px;
+    height: 250px;
+  }
+
+  .book-author {
+    font-size: 18px;
+    font-weight: 400px;
+  }
+
+  h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form-wrapper {
+  margin-bottom: 20px;
+}

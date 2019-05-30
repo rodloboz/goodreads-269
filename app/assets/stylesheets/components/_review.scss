@@ -1,0 +1,38 @@
+.review {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.avatar-card-and-rating-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.review-content-wrapper {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.avatar-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  .user-and-date {
+    p {
+      margin-bottom: 0;
+    }
+    .user-name {
+      font-size: 19px;
+    }
+    .date-info {
+      font-weight: lighter;
+      font-size: 15px;
+    }
+  }
+}
+
+.rating-container {
+  color: $orange;
+}

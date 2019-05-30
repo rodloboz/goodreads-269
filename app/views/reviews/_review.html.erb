@@ -1,0 +1,25 @@
+<div class="review">
+  <div class="avatar-card-and-rating-wrapper">
+    <div class="avatar-container">
+      <div class="avatar-card">
+        <div class="padded-right">
+            <%= image_tag(user_avatar(review.user), class: "avatar-large") %>
+        </div>
+        <div class="user-and-date">
+          <p class="user-name">
+            <%#= review.user.first_name %>
+          </p>
+          <p><%= review.user.first_name %></p>
+          <p class="date-info"><%= review.created_at.strftime("%d %b, %Y") %></p>
+        </div>
+      </div>
+    </div>
+    <div class="rating-container">
+      <p id="review-rating"><%= set_stars(review.rating) %></p>
+    </div>
+  </div>
+  <div class="review-content-wrapper">
+    <p id="review-content"><%= review.content.html_safe %></p>
+  </div>
+  <hr>
+</div>
