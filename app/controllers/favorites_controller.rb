@@ -3,10 +3,7 @@ class FavoritesController < ApplicationController
     @book = Book.find(params[:book_id])
     current_user.favorites.create(book: @book)
 
-    respond_to do |format|
-      format.html { redirect_to @book }
-      format.js
-    end
+    redirect_to @book
   end
 
   def destroy
@@ -14,9 +11,5 @@ class FavoritesController < ApplicationController
     @book = favorite.book
     favorite.destroy
 
-    respond_to do |format|
-      format.html { redirect_to @book }
-      format.js { render :create }
-    end
-  end
+    redirect_to @book
 end
