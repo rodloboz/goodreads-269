@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-  <%= simple_form_for [@book, @review] do |f| %>
+  <%= simple_form_for [@book, @review], remote: true do |f| %>
     <%= f.input :rating, collection: (1..5) %>
     <%= f.input :content %>
     <%= f.button :submit, class: "btn btn-default btn-success" %>

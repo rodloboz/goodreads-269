@@ -1,5 +1,5 @@
 {
-  "name": "goodreads-258",
+  "name": "goodreads-269",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^4.0.4",

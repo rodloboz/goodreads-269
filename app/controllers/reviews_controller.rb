@@ -6,11 +6,16 @@ class ReviewsController < ApplicationController
     @review.user = current_user
 
     if @review.save
-      redirect_to book_path(@book, anchor: "#reviews")
+      respond_to do |format|
+        format.html { redirect_to book_path(@book, anchor: "#reviews") }
+        format.js
+      end
     else
-      render "books/show"
+      respond_to do |format|
+        format.html { render "books/show" }
+        format.js
+      end
     end
-
   end
 
   private
